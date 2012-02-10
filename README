@@ -11,6 +11,7 @@ Installation
 * Get the plugin;
 * Unzip it into the plugins folder of TinyMCE;
 * Wherever you startup a TinyMCE editor, register the plugin:
+
 yourTextArea.tinymce({
     ...
     // General options
