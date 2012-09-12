@@ -1,3 +1,9 @@
+/*
+ * TinyMCELatexPlugin - A plugin to write formulae in TinyMCE through Google APIs .
+ * v1.0 - by Diego Caponera - http://www.diegocaponera.com/
+ * MIT Licensed.
+ */
+
 tinyMCEPopup.requireLangPack();
 
 var LatexDialog = {
