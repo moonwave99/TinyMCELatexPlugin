@@ -1,4 +1,4 @@
-#TinyMCE Latex Plugin - A plugin to write formulae in TinyMCE through Google APIs.
+#TinyMCE Latex Plugin
 
 It does what it says: you write LaTeX code, it inserts an image rendered through Google Infographics API in your fav web rich text editor.
 
@@ -15,9 +15,11 @@ You can:
 
 * [Get the plugin](https://github.com/moonwave99/TinyMCELatexPlugin/zipball/master);
 * Unzip it into the plugins folder of TinyMCE;
-* Wherever you startup a TinyMCE editor, register the plugin:
+* Wherever you startup a TinyMCE editor, register the plugin.
 
-	yourTextArea.tinymce({
+Using the [TinyMCE jQuery Plugin](http://www.tinymce.com/tryit/jquery_plugin.php):
+
+	$('#yourTextArea').tinymce({
 	    ...
 	    // General options
 	    theme : "advanced",
