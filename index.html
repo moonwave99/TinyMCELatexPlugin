@@ -4,11 +4,11 @@
   <head>
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Tinymcelatexplugin : A plugin to write formulae in TinyMCE thru Google APIs" />
+    <meta name="description" content="TinyMCE LaTeX Plugin : A plugin to write formulae in TinyMCE through Google APIs" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <title>Tinymcelatexplugin</title>
+    <title>TinyMCE LaTeX Plugin</title>
   </head>
 
   <body>
@@ -16,14 +16,14 @@
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
         <header class="inner">
-          <a id="forkme_banner" href="https://github.com/moonwave99/TinyMCELatexPlugin">View on GitHub</a>
+          <a id="forkme_banner" href="https://github.com/moonwave99/TinyMCELaTeXPlugin">View on GitHub</a>
 
-          <h1 id="project_title">Tinymcelatexplugin</h1>
-          <h2 id="project_tagline">A plugin to write formulae in TinyMCE thru Google APIs</h2>
+          <h1 id="project_title">TinyMCE LaTeX Plugin</h1>
+          <h2 id="project_tagline">A plugin to write formulae in TinyMCE through Google APIs.</h2>
 
             <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/moonwave99/TinyMCELatexPlugin/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/moonwave99/TinyMCELatexPlugin/tarball/master">Download this project as a tar.gz file</a>
+              <a class="zip_download_link" href="https://github.com/moonwave99/TinyMCELaTeXPlugin/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/moonwave99/TinyMCELaTeXPlugin/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
@@ -31,44 +31,88 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
+		<p>It does what it says: you write LaTeX code, it inserts an image rendered through Google Infographics API in your fav web rich text editor - give it a go!</p>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<textarea>
+	<h1>Fourier Transform</h1>
+	<p>Let:</p>
+	<p><img class="latex" src="https://chart.googleapis.com/chart?cht=tx&amp;chf=a,s,000000|bg,s,FFFFFF00&amp;chl=%5Cwidehat%7Bf%7D(%5Comega)%20=%20%5Cint_%7B%5Cmathbb%7BR%7D%7D%20f(x)%20%5Ccdot%20e%5E%7B-2%5Cpi%20i%20%5Comega%20x%7D%20dx" alt="\widehat{f}(\omega) = \int_{\mathbb{R}} f(x) \cdot e^{-2\pi i \omega x} dx" /></p>
+	<p>be the Fourier transform of f.</p>
+	<p>&nbsp;</p>
+	<p>&nbsp;</p>			
+	<p><strong>[ Click on the formula, then on the TeX icon to edit. ]</strong></p>				
+</textarea>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+		<hr/>
+		<h3>Installation</h3>
+		
+		<ul>
+			<li><a href="https://github.com/moonwave99/TinyMCELaTeXPlugin/zipball/master">Get the plugin</a>;</li>
+			<li>Unzip it into the <strong>plugins folder</strong> of TinyMCE;</li>
+ 			<li>Wherever you startup a TinyMCE editor, register the plugin:</li>
+		</ul>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+		<pre><code>yourTextArea.tinymce({
+    ...
+    // General options
+    theme : "advanced",
+    plugins : "autolink,lists, ... ,latex",
+    ...
+    // Theme options
+    ...
+    // Put the plugin wherever you want!
+    theme_advanced_buttons2 : "...,latex,|,...",
 
-<h3>Designer Templates</h3>
+    ...
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+});</code></pre>
 
-<h3>Rather Drive Stick?</h3>
+		<p>You are done - go write a post about Zeta Function and Megan Fox now!</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
       </section>
     </div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
       <footer class="inner">
-        <p class="copyright">Tinymcelatexplugin maintained by <a href="https://github.com/moonwave99">moonwave99</a></p>
+        <p class="copyright">TinyMCE LaTeX Plugin maintained by <a href="https://github.com/moonwave99">moonwave99</a></p>
         <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
     </div>
 
-    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+
+	<script defer src="javascripts/tiny_mce/jquery.tinymce.js"></script>	
+	<script>
+	
+		$(document).ready(function(){
+		
+			$('textarea').tinymce({
+				
+				// Location of TinyMCE script
+				script_url : 'javascripts/tiny_mce/tiny_mce.js',
+
+				// General options
+				theme : "advanced",
+				plugins : "autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist,latex",
+				document_base_url : '../',
+				width : '660', 
+				height : '320',
+				relative_urls : false,	
+
+				// Theme options
+				theme_advanced_buttons1 : "save,newdocument,|,bold,italic,underline,strikethrough,|,justifyleft,justifycenter,justifyright,justifyfull,styleselect,formatselect,fontselect,fontsizeselect,",
+				theme_advanced_buttons2 : "cut,copy,paste,pastetext,pasteword,|,search,replace,|,bullist,numlist,|,outdent,indent,blockquote,|,undo,redo,|,link,unlink,anchor,image,cleanup,help,code,latex,",
+				theme_advanced_buttons3 : '',
+				theme_advanced_toolbar_location		: "top",
+				theme_advanced_toolbar_align		: "left",
+				theme_advanced_statusbar_location	: "bottom",
+				theme_advanced_resizing				: true
+			});				
+			
+		});
+	
+	</script>
 
   </body>
 </html>
